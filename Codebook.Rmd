@@ -15,22 +15,18 @@ tidydata <- read.table(url(fileurl), header = TRUE)
 ## Project Description
 This project takes a raw data file from a Human Activity Recognition Using Smartphones study and convert it into a tidy data.
 
-*****
 
 ##Study design and data processing
 
 ###Collection of the raw data
 The raw data was downloaded  [here.](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
-****
 
 ##Creating the tidy datafile
 
 ###Guide to create the tidy data file
 
 We used the data from the link above in order to create the tidy data file, For more detailed information about the proccess of creation of the tidy dataframe please read [README file in this repository.](https://github.com/kramus/Getting-and-Cleaning-Data-Project/blob/master/README.md)
-
-****
 
 ##Description of the variables in the tidy_data.txt file
 This file includes 68 variables that were substracted from a raw file of 561 variables. The tidy dataframe contains only the variables in which the mean or standard deviation were calculated. The final product contains the mean of all variables grouped by person and type of activity. For a more detailed explanation please read [README file.](https://github.com/kramus/Getting-and-Cleaning-Data-Project/blob/master/README.md)
@@ -60,8 +56,6 @@ nombre
 - Class: *numeric*
 - Range:  -1 to 1
 - Calculation: These variables were calculated using `summarise_each` R command. We took the mean of the variables by groups (id and activity). 
-
-****
 
 ##Sources
 The website of the study is http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
