@@ -123,7 +123,7 @@ If you want to access the tidy data, please use the following code in R:
 fileurl <- "https://s3.amazonaws.com/coursera-uploads/user-3fac6b6aeb72fd55d9a46f0c/975117/asst-3/2697c5207a6e11e5ae9e2b7830052642.txt"
 fileurl <- sub("^https", "http", fileurl)
 tidydata <- read.table(url(fileurl), header = TRUE)
-view(tidydata)
+View(tidydata)
 ```
 
 ****
